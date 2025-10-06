@@ -1,0 +1,23 @@
+第一章 python入门
+
+#使用的外部库：
+NumPy—用于数值计算，提供数学算法和便利的数组（矩阵）操作方法。
+Matplotlib—用于画图的库，可将实验结果可视化。
+
+#NumPy
+导入：import numpy （as np）（如果不行，可以用命令行弄）
+生成NumPy数组（类型：numpy.ndarray）：使用np.array（）方法，接受python列表做参数，生成NumPy数组。
+算术运算：两数组间加减乘除，得到对应元素加减乘除产生的新数组；也可与单一数值进行运算，则得到数组中各元素与该数值标量运算产生的新数组，这个功能也被称为广播。
+n维数组：将一维数组中元素改为数组，则得到二维数组（矩阵），以此类推。
+n维数组的运算：相同形状数组的运算同样是对应元素进行运算；也有广播功能；使用布尔运算符，会得到布尔型数组。
+访问元素：数组名[i]([j]…)，注意从零开始。
+np.sum（…）：求数组各元素之和。
+
+#Matplotlib
+引入：import matplotlib.pyplot as plt
+例子：绘制sin
+    x=np.arrange（0，6，0.1）
+    y=np.sin（x）
+    plt.plot（x，y）
+    plt.show（）
+pyplot的功能：加标签（y后加label=“…”）；虚线绘制（linestyle=“- -”）；x轴标签（plt.xlabel（“x”））；标题（plt.title（‘…’））。
